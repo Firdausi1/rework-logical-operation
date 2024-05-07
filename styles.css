@@ -111,6 +111,7 @@ nav {
   align-items: center;
   height: 10vh;
   padding: 30px var(--padding-lg);
+  z-index: 99;
 }
 nav ul {
   display: flex;
