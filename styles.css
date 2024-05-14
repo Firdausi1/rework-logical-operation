@@ -135,6 +135,9 @@ nav i {
 .logo img {
   width: 40%;
 }
+.mobile_view {
+  display: none;
+}
 header {
   background-image: url(./images/header-background.png);
   background-size: cover;
@@ -323,7 +326,6 @@ header {
 .talk {
   background-color: #df8e00;
   grid-template-columns: 1fr 30%;
-  
 }
 .talk .card {
   background-color: #ffc427;
@@ -480,114 +482,54 @@ footer p {
   }
 }
 @media screen and (max-width: 425px) {
-  body {
-    --padding-xlg: 40px;
-    --padding-lg: 20px;
-    --padding-md: 10px;
-    --padding-sm: 5px;
+  nav {
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 30px 0;
   }
   nav ul {
-    font-size: 10px;
+    display: none;
   }
-  nav button {
-    font-size: 10px;
-  }
-  header img {
-    width: 50%;
-  }
-  header {
-    gap: 20px;
-  }
-  header span {
-    font-size: 8px;
-  }
-  .header_text h3 {
+  .logo img {
     width: 100%;
   }
-  .header_text p {
-    font-size: 12px;
-    margin-top: 10px;
+  .web_view {
+    display: none;
   }
-  h1 {
-    font-size: 24px;
+  .mobile_view {
+    display: block;
+    padding-top: 10vh;
   }
-  h2 {
-    font-size: 22px;
+  .mobile_view div {
+    text-align: center;
   }
-  h3 {
-    font-size: 20px;
+  .bg {
+    padding: 50px 0;
+    border-bottom: 1px solid #202020;
   }
-  h4 {
+  .bg_blue {
+    background-color: #009ddb;
+  }
+  .bg_orange {
+    background-color: #ff524d;
+  }
+  .bg_green {
+    background-color: #7ec026;
+  }
+  .bg_yellow {
+    background-color: #ffc328;
+  }
+  .mobile_footer {
+    background-color: #000;
+    padding: 20px 0;
+  }
+  .mobile_footer a {
+    color: #fff;
+    text-decoration: none;
     font-size: 14px;
-  }
-  h5 {
-    font-size: 12px;
-  }
-  h6 {
-    font-size: 10px;
-  }
-  .datascience .card {
-    padding: var(--padding-sm);
-  }
-  .datascience a {
-    font-size: 8px;
-  }
-  .class a {
-    font-size: 8px;
-  }
-  .class h4 {
-    margin-bottom: 5px;
-  }
-  .store a,
-  .brands_right a,
-  .news p {
-    font-size: 10px;
-  }
-  .talk p {
-    font-size: 10px;
-    max-width: 100%;
-  }
-  .talk i {
-    font-size: 30px;
-  }
-  .footer_left {
-    font-size: 10px;
-    gap: 8px;
-  }
-  .footer_right {
-    width: 100%;
-    font-size: 8px;
-  }
-}
-@media screen and (max-width: 375px) {
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  h4 {
-    font-size: 12px;
-  }
-  h5 {
-    font-size: 10px;
-  }
-  h6 {
-    font-size: 8px;
-  }
-  .store a,
-  .brands_right a,
-  .news p {
-    font-size: 8px;
-  }
-  .talk p {
-    font-size: 8px;
-  }
-  .footer_left {
-    font-size: 8px;
-    gap: 5px;
+    display: block;
+    margin-top: 10px;
   }
 }
